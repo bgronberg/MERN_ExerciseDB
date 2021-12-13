@@ -1,0 +1,116 @@
+###
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "squat",
+    "reps": 1003,
+    "weight": 100,
+    "unit": "lb",
+    "date": "12-05-21"
+}
+
+###
+GET http://localhost:3000/exercises/61ad457a177aba1779574fad HTTP/1.1
+
+###
+GET http://localhost:3000/exercises/ HTTP/1.1
+
+###
+PUT http://localhost:3000/exercises/61ad457a177aba1779574fad HTTP/1.1
+content-type: application/json
+
+{
+    "name": "deadlift",
+    "reps": 10,
+    "weight": 130,
+    "unit": "lb",
+    "date": "12-04-2021"
+}
+
+
+
+###
+DELETE http://localhost:3000/exercises/61ad4a86fd62c757388bff9d HTTP/1.1
+
+
+###
+
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "deadlift",
+    "reps": 5,
+    "weight": 150,
+    "unit": "lb",
+    "date": "12-05-2021"
+}
+###
+
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "pushup",
+    "reps": 20,
+    "weight": 0,
+    "unit": "lb",
+    "date": "12-05-2021"
+}
+
+###
+
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "pullup",
+    "reps": 10,
+    "weight": 0,
+    "unit": "lb",
+    "date": "12-05-2021"
+}
+
+
+###
+POST http://localhost:3000/movies HTTP/1.1
+content-type: application/json
+
+{
+    "title": "No Country For Old Men",
+    "year": 2007,
+    "language": "English"
+}
+
+
+###
+POST http://localhost:3000/movies HTTP/1.1
+content-type: application/json
+
+{
+    "title": "A Serious Man",
+    "year": 2009,
+    "language": "English"
+}
+
+
+###
+POST http://localhost:3000/add-movie HTTP/1.1
+content-type: application/json
+
+{
+    "title": "City Of God",
+    "year": 2003,
+    "language": "Portuguese"
+}
+
+###
+POST http://localhost:3000/add-movie HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Parasite",
+    "year": 2019,
+    "language": "Korean"
+}
